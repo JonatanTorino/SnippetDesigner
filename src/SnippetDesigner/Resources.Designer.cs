@@ -178,6 +178,15 @@ namespace Microsoft.SnippetDesigner {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to XPP.
+        /// </summary>
+        internal static string DisplayNameXPP {
+            get {
+                return ResourceManager.GetString("DisplayNameXPP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Snippet File (*.snippet)
         ///*.snippet
         ///

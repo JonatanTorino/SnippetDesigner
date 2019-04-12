@@ -367,4 +367,7 @@
   <data name="DisplayNameTypeScript" xml:space="preserve">
     <value>TypeScript</value>
   </data>
+  <data name="DisplayNameXPP" xml:space="preserve">
+    <value>XPP</value>
+  </data>
 </root>

@@ -15,6 +15,7 @@ namespace Microsoft.SnippetDesigner
         HTML, 
         XAML,
         TypeScript
+        ,XPP
     }
 
     /// <summary>
@@ -69,6 +70,8 @@ namespace Microsoft.SnippetDesigner
                     return Resources.DisplayNameXAML;
                 case Language.TypeScript:
                     return Resources.DisplayNameTypeScript;
+                case Language.XPP:
+                    return Resources.DisplayNameXPP;
                 default:
                     return String.Empty;
             }
@@ -105,6 +108,8 @@ namespace Microsoft.SnippetDesigner
                     return StringConstants.SchemaNameXAML;
                 case Language.TypeScript:
                     return StringConstants.SchemaNameTypeScript;
+                case Language.XPP:
+                    return StringConstants.SchemaNameXPP;
                 default:
                     return String.Empty;
             }
@@ -140,6 +145,8 @@ namespace Microsoft.SnippetDesigner
                 snippetSchemaLanguageToDisplay[StringConstants.SchemaNameTypeScript] = Resources.DisplayNameTypeScript;
             }
 
+            snippetSchemaLanguageToDisplay[StringConstants.SchemaNameXPP] = Resources.DisplayNameXPP;
+
             snippetSchemaLanguageToDisplay[String.Empty] = String.Empty;
 
 
@@ -168,6 +175,8 @@ namespace Microsoft.SnippetDesigner
             {
                 displayLanguageToXML[Resources.DisplayNameTypeScript] = StringConstants.SchemaNameTypeScript;
             }
+
+            displayLanguageToXML[Resources.DisplayNameXPP] = StringConstants.SchemaNameXPP;
 
             displayLanguageToXML[String.Empty] = String.Empty;
         }
